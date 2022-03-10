@@ -1,0 +1,17 @@
+{
+  "LABEL": {
+    "name": "title needs formatting",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+    "prefixes": ["DN: "],
+    "regexp": "\s*\d+ww\d+\.\d\s*,\s*\w+\s*,\s*(.*hsdes.*\d+|none|na|nohsd|\d+)\s*,.*,.*,.*",
+    "regexpFlags": "i",
+    "ignoreLabels" : ["skip_checks"]
+  },
+  "MESSAGES": {
+    "success": "All OK",
+    "failure": "Failing CI test",
+    "notice": "You Pull request does not meet requirements.\nPlease follow the format example below:\n22ww11.1, $USER, https://hsdes.intel.com/appstore/article/#/22010484308, pre_vortex, 76P31/76P41, Updated output spice directly to resolve missing subckt for gendevs\n\nregexp checked is:\n\s*\d+ww\d+\.\d\s*,\s*\w+\s*,\s*(.*hsdes.*\d+|none|na|nohsd|\d+)\s*,.*,.*,.*\n regexp flags: i (non case sensative)\n"
+  }
+}
